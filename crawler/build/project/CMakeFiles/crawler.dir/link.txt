@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/crawler.dir/main.cpp.o  -o crawler  ../page-loader/libpage_loader.a ../parser/libparser.a -lcurl -lcurlpp -lgumbo 

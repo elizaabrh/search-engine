@@ -1,0 +1,42 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/mnt/d/computer/Documents/GitHub/search-engine/crawler/page-loader/LoadResult.cpp
+LoadResult.hpp
+/mnt/d/computer/Documents/GitHub/search-engine/crawler/page-loader/LoadResult.hpp
+
+/mnt/d/computer/Documents/GitHub/search-engine/crawler/page-loader/LoadResult.hpp
+iostream
+-
+string
+-
+
+/mnt/d/computer/Documents/GitHub/search-engine/crawler/page-loader/PageLoader.cpp
+PageLoader.hpp
+/mnt/d/computer/Documents/GitHub/search-engine/crawler/page-loader/PageLoader.hpp
+
+/mnt/d/computer/Documents/GitHub/search-engine/crawler/page-loader/PageLoader.hpp
+iostream
+-
+string
+-
+sstream
+-
+curlpp/cURLpp.hpp
+-
+curlpp/Easy.hpp
+-
+curlpp/Options.hpp
+-
+curlpp/Infos.hpp
+-
+curl/curl.h
+-
+LoadResult.hpp
+/mnt/d/computer/Documents/GitHub/search-engine/crawler/page-loader/LoadResult.hpp
+

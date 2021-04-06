@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="crawler"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\page-loader\;CMake Files\parser\;CMake Files\project\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="D:/computer/Documents/GitHub/search-engine/crawler/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/computer/Documents/GitHub/search-engine/crawler/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/computer/Documents/GitHub/search-engine/crawler/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/computer/Documents/GitHub/search-engine/crawler/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/computer/Documents/GitHub/search-engine/crawler/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="D:/computer/Documents/GitHub/search-engine/crawler/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/computer/Documents/GitHub/search-engine/crawler/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/computer/Documents/GitHub/search-engine/crawler/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/computer/Documents/GitHub/search-engine/crawler/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/computer/Documents/GitHub/search-engine/crawler/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="D:/computer/Documents/GitHub/search-engine/crawler/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/computer/Documents/GitHub/search-engine/crawler/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/computer/Documents/GitHub/search-engine/crawler/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/computer/Documents/GitHub/search-engine/crawler/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/computer/Documents/GitHub/search-engine/crawler/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="page_loader">
+				<Option output="D:/computer/Documents/GitHub/search-engine/crawler/cmake-build-debug/page-loader/libpage_loader.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/computer/Documents/GitHub/search-engine/crawler/cmake-build-debug/page-loader"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/4.8.1/include/c++"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/4.8.1/include/c++/mingw32"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/4.8.1/include/c++/backward"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/4.8.1/include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/4.8.1/../../../../include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/4.8.1/include-fixed"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/4.8.1/../../../../mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/computer/Documents/GitHub/search-engine/crawler/cmake-build-debug/page-loader/Makefile&quot;  VERBOSE=1 page_loader"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/computer/Documents/GitHub/search-engine/crawler/cmake-build-debug/page-loader/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/computer/Documents/GitHub/search-engine/crawler/cmake-build-debug/page-loader/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/computer/Documents/GitHub/search-engine/crawler/cmake-build-debug/page-loader/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="page_loader/fast">
+				<Option output="D:/computer/Documents/GitHub/search-engine/crawler/cmake-build-debug/page-loader/libpage_loader.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/computer/Documents/GitHub/search-engine/crawler/cmake-build-debug/page-loader"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/4.8.1/include/c++"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/4.8.1/include/c++/mingw32"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/4.8.1/include/c++/backward"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/4.8.1/include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/4.8.1/../../../../include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/4.8.1/include-fixed"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/4.8.1/../../../../mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/computer/Documents/GitHub/search-engine/crawler/cmake-build-debug/page-loader/Makefile&quot;  VERBOSE=1 page_loader/fast"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/computer/Documents/GitHub/search-engine/crawler/cmake-build-debug/page-loader/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/computer/Documents/GitHub/search-engine/crawler/cmake-build-debug/page-loader/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/computer/Documents/GitHub/search-engine/crawler/cmake-build-debug/page-loader/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="parser">
+				<Option output="D:/computer/Documents/GitHub/search-engine/crawler/cmake-build-debug/parser/libparser.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/computer/Documents/GitHub/search-engine/crawler/cmake-build-debug/parser"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/4.8.1/include/c++"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/4.8.1/include/c++/mingw32"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/4.8.1/include/c++/backward"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/4.8.1/include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/4.8.1/../../../../include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/4.8.1/include-fixed"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/4.8.1/../../../../mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/computer/Documents/GitHub/search-engine/crawler/cmake-build-debug/parser/Makefile&quot;  VERBOSE=1 parser"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/computer/Documents/GitHub/search-engine/crawler/cmake-build-debug/parser/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/computer/Documents/GitHub/search-engine/crawler/cmake-build-debug/parser/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/computer/Documents/GitHub/search-engine/crawler/cmake-build-debug/parser/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="parser/fast">
+				<Option output="D:/computer/Documents/GitHub/search-engine/crawler/cmake-build-debug/parser/libparser.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/computer/Documents/GitHub/search-engine/crawler/cmake-build-debug/parser"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/4.8.1/include/c++"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/4.8.1/include/c++/mingw32"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/4.8.1/include/c++/backward"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/4.8.1/include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/4.8.1/../../../../include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/4.8.1/include-fixed"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/4.8.1/../../../../mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/computer/Documents/GitHub/search-engine/crawler/cmake-build-debug/parser/Makefile&quot;  VERBOSE=1 parser/fast"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/computer/Documents/GitHub/search-engine/crawler/cmake-build-debug/parser/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/computer/Documents/GitHub/search-engine/crawler/cmake-build-debug/parser/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/computer/Documents/GitHub/search-engine/crawler/cmake-build-debug/parser/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="crawler">
+				<Option output="D:/computer/Documents/GitHub/search-engine/crawler/cmake-build-debug/project/crawler.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/computer/Documents/GitHub/search-engine/crawler/cmake-build-debug/project"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="D:/computer/Documents/GitHub/search-engine/crawler/project/../page-loader"/>
+					<Add directory="D:/computer/Documents/GitHub/search-engine/crawler/project/../parser"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/4.8.1/include/c++"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/4.8.1/include/c++/mingw32"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/4.8.1/include/c++/backward"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/4.8.1/include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/4.8.1/../../../../include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/4.8.1/include-fixed"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/4.8.1/../../../../mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/computer/Documents/GitHub/search-engine/crawler/cmake-build-debug/project/Makefile&quot;  VERBOSE=1 crawler"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/computer/Documents/GitHub/search-engine/crawler/cmake-build-debug/project/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/computer/Documents/GitHub/search-engine/crawler/cmake-build-debug/project/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/computer/Documents/GitHub/search-engine/crawler/cmake-build-debug/project/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="crawler/fast">
+				<Option output="D:/computer/Documents/GitHub/search-engine/crawler/cmake-build-debug/project/crawler.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/computer/Documents/GitHub/search-engine/crawler/cmake-build-debug/project"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="D:/computer/Documents/GitHub/search-engine/crawler/project/../page-loader"/>
+					<Add directory="D:/computer/Documents/GitHub/search-engine/crawler/project/../parser"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/4.8.1/include/c++"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/4.8.1/include/c++/mingw32"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/4.8.1/include/c++/backward"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/4.8.1/include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/4.8.1/../../../../include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/4.8.1/include-fixed"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/4.8.1/../../../../mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/computer/Documents/GitHub/search-engine/crawler/cmake-build-debug/project/Makefile&quot;  VERBOSE=1 crawler/fast"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/computer/Documents/GitHub/search-engine/crawler/cmake-build-debug/project/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/computer/Documents/GitHub/search-engine/crawler/cmake-build-debug/project/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/computer/Documents/GitHub/search-engine/crawler/cmake-build-debug/project/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="D:/computer/Documents/GitHub/search-engine/crawler/page-loader/LoadResult.cpp">
+			<Option target="page_loader"/>
+		</Unit>
+		<Unit filename="D:/computer/Documents/GitHub/search-engine/crawler/page-loader/LoadResult.hpp">
+			<Option target="page_loader"/>
+		</Unit>
+		<Unit filename="D:/computer/Documents/GitHub/search-engine/crawler/page-loader/PageLoader.cpp">
+			<Option target="page_loader"/>
+		</Unit>
+		<Unit filename="D:/computer/Documents/GitHub/search-engine/crawler/page-loader/PageLoader.hpp">
+			<Option target="page_loader"/>
+		</Unit>
+		<Unit filename="D:/computer/Documents/GitHub/search-engine/crawler/parser/parser.cpp">
+			<Option target="parser"/>
+		</Unit>
+		<Unit filename="D:/computer/Documents/GitHub/search-engine/crawler/parser/parser.hpp">
+			<Option target="parser"/>
+		</Unit>
+		<Unit filename="D:/computer/Documents/GitHub/search-engine/crawler/project/main.cpp">
+			<Option target="crawler"/>
+		</Unit>
+		<Unit filename="D:/computer/Documents/GitHub/search-engine/crawler/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="D:/computer/Documents/GitHub/search-engine/crawler/page-loader/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\page-loader\"/>
+		</Unit>
+		<Unit filename="D:/computer/Documents/GitHub/search-engine/crawler/parser/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\parser\"/>
+		</Unit>
+		<Unit filename="D:/computer/Documents/GitHub/search-engine/crawler/project/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\project\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
