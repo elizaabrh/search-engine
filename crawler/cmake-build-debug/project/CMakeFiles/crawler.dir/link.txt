@@ -1,3 +1,0 @@
-"F:\Program Files\CLion 2020.3.3\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\crawler.dir/objects.a
-C:\MinGW\bin\ar.exe cr CMakeFiles\crawler.dir/objects.a @CMakeFiles\crawler.dir\objects1.rsp
-C:\MinGW\bin\g++.exe -g   -Wl,--whole-archive CMakeFiles\crawler.dir/objects.a -Wl,--no-whole-archive  -o crawler.exe -Wl,--out-implib,libcrawler.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\crawler.dir\linklibs.rsp

@@ -1,2 +1,0 @@
-C:\MinGW\bin\ar.exe qc libpage_loader.a  CMakeFiles/page_loader.dir/LoadResult.cpp.obj CMakeFiles/page_loader.dir/PageLoader.cpp.obj
-C:\MinGW\bin\ranlib.exe libpage_loader.a
