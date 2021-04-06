@@ -17,11 +17,12 @@ LoadResult PageLoader::load(const string& url) //my realizuem
    request.perform(); // will write all data into "out" stream
 
 
-   // add also an efecitve url for the loadResult
+   // add also an effective url for the loadResult
    
    return LoadResult(out.str(), curlpp::infos::ResponseCode::get(request));
 
 }
+
 
 
 
