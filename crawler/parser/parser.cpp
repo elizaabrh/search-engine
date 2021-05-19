@@ -1,19 +1,20 @@
 #include "parser.hpp"
 
-Parser::Parser(std::string html, std::string ogurl) : html(html), ogurl(ogurl) {
+Parser::Parser(std::string html, std::string ogurl) : html(html), ogurl(ogurl)
+{
 
-}
+} // vor sarqenq parser tipi object
 
+// description
 void Parser::parse() 
 {
-    GumboOutput *output = gumbo_parse(html.c_str());
+    GumboOutput *output = gumbo_parse(html.c_str()); // c-akan string (char*) , vory cuyc a talis toghi 1in simvoli vra
     if (output == NULL)
     {
         return;
     }
 
     this->description = this->parseDescription(output->root);
-
 }
 
 std::string Parser::parseDescription(GumboNode *node)
@@ -51,7 +52,28 @@ std::string Parser::parseDescription(GumboNode *node)
 
     return desc;
 }
+// text
 
+
+
+std::string Parser::parseText(GumboNode *node)
+{
+
+}
+
+//links
+std::string Parser::parseLinks(GumboNode *node)
+{
+
+}
+
+//title
+std::string Parser::parseTitle(GumboNode *node)
+{
+
+}
+
+// gets
 std::string Parser::getText() const 
 {
     return this->texts;
@@ -59,10 +81,15 @@ std::string Parser::getText() const
 
 std::string Parser::getDescription() const
 {
-    return this->description;
+	return this->description;
 }
-/*
-returnType className::classMethod() {
-    body
+
+std::vector<std::string> Parser::getLinks() const
+{
+	return this->links;
 }
-*/
+
+std::string Parser::getTitle() const
+{
+	return this->title;
+}

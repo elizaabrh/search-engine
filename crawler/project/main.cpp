@@ -15,6 +15,9 @@ int main()
     parser.parse();
 
     std::cout << parser.getDescription() << std::endl;
+	std::cout << parser.getTitle() << std::endl;
+    std::cout << parser.getLinks() << std::endl;
+    std::cout << parser.getText() << std::endl;
 
 }
 

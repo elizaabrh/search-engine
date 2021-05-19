@@ -1,7 +1,5 @@
-#ifndef LOAD_RESULT_HPP   //if not defined
-#define LOAD_RESULT_HPP   //yete ifndef define endif chanenq,
-                      //to 2 angam include aneluc 2 angam a code-y copy linelu
-//eto dlya togo , chtoby file podklyuchilsya tolko odin raz, garantia  a
+#ifndef LOAD_RESULT_HPP
+#define LOAD_RESULT_HPP
 #include <iostream>
 #include <string>
 

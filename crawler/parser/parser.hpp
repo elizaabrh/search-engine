@@ -6,7 +6,6 @@
 #include <vector>
 #include <string>
 
-
 class Parser {
 private:
     std::vector<std::string> links; // class-i field
@@ -19,24 +18,19 @@ private:
 
 public:
     Parser(std::string html, std::string ogurl);
-
     void parse(); // const chenq grum , vor karana field-ery poxi
-    // gets
+
+    std::string getTitle() const;
+	std::vector<std::string> getLinks() const;
     std::string getText() const;
     std::string getDescription() const;
 
 private: 
     std::string parseDescription(GumboNode* node);
+	std::string parseTitle(GumboNode* node);
+	std::string parseText(GumboNode* node);
+	std::string parseLinks(GumboNode* node);
 };
 
-
-
-
-
-
-
-
-
-
-
 #endif
+
