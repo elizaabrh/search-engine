@@ -8,14 +8,11 @@ using namespace std;
 class LoadResult
 {
 private:
-    //stores the response body
     string body;
-    //stores the response status
     int status;
     std::string ogurl;
 
-public:           
-    //constructor
+public:
     LoadResult(const string& body, int status);
     string getBody() const;
     int getStatus() const;

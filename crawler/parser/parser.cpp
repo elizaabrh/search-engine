@@ -9,7 +9,7 @@ Parser::Parser(std::string html, std::string ogurl)
 void Parser::parse()
 {
 	// html
-	GumboOutput* output = gumbo_parse(html.c_str()); // c-akan string (char*) , vory cuyc a talis toghi 1in simvoli vra
+	GumboOutput* output = gumbo_parse(html.c_str());
 	if (output==NULL)
 	{
 		return;
@@ -27,7 +27,6 @@ void Parser::parse()
 	// texts
 	this->texts = this->parseText(output->root);
 
-
 }
 
 std::string Parser::parseDescription(GumboNode* node)
@@ -38,21 +37,27 @@ std::string Parser::parseDescription(GumboNode* node)
 		return desc;
 	}
 
-	// if not a meta tag, then search in others
-	if (node->v.element.tag!=GUMBO_TAG_META) {
+	// if the tag type is not meta, then search it in others
+	if (node->v.element.tag!=GUMBO_TAG_META)
+	{
 		GumboVector* children = &node->v.element.children;
-		for (size_t i = 0; i<children->length; ++i) {
+		for (size_t i = 0; i<children->length; ++i)
+		{
 			desc = this->parseDescription(static_cast<GumboNode*>(children->data[i]));
-			if (!desc.empty()) {
+			if (!desc.empty())
+			{
 				return desc;
 			}
 		}
 	}
-	// if the tag type is meta, then take from it description  and return
+
+	// if the tag type is meta, then take from its description and return
 	GumboAttribute* name = gumbo_get_attribute(&node->v.element.attributes, "name");
-	if (name!=NULL && name->value!=NULL && std::string(name->value)!="description") {
+	if (name!=NULL && name->value!=NULL && std::string(name->value)!="description")
+	{
 		GumboAttribute* cont = gumbo_get_attribute(&node->v.element.attributes, "content");
-		if (cont!=NULL && cont->value!=NULL) {
+		if (cont!=NULL && cont->value!=NULL)
+		{
 			desc = std::string(cont->value);
 		}
 	}

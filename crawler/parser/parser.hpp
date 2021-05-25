@@ -10,7 +10,7 @@
 
 class Parser {
 private:
-    std::vector<std::string> links; // class-i field
+    std::vector<std::string> links;
     std::string texts;
     std::string title;
     std::string description;
