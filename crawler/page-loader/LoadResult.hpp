@@ -13,7 +13,7 @@ private:
     std::string ogurl;
 
 public:
-    LoadResult(const string& body, int status);
+    LoadResult(const string& body, std::string ogUrl, int status);
     string getBody() const;
     int getStatus() const;
     string getOgurl() const;

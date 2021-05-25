@@ -1,6 +1,7 @@
 #include "LoadResult.hpp"
 
-LoadResult::LoadResult(const string &body, int status) : body(body), status(status)
+LoadResult::LoadResult(const string &body, std::string ogUrl, int status)
+						: body(body), ogurl(ogUrl), status(status)
 {
     
 }

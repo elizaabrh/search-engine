@@ -76,7 +76,7 @@ std::string Parser::parseText(GumboNode* node)
 		std::string contents = "";
 		GumboVector* children = &node->v.element.children;
 		for (unsigned int i = 0; i < children->length; ++i) {
-			const std::string text = cleantext((GumboNode*) children->data[i]);
+			const std::string text = parseText(static_cast<GumboNode*> (children->data[i]));
 			if (i != 0 && !text.empty()) {
 				contents.append(" ");
 			}
@@ -105,7 +105,7 @@ void Parser::parseLinks(GumboNode* node)
 	GumboVector* children = &node->v.element.children;
 	for (unsigned int i = 0; i < children->length; ++i)
 	{
-		search_for_links(static_cast<GumboNode*>(children->data[i]));
+		parseLinks(static_cast<GumboNode*>(children->data[i]));
 	}
 
 }
@@ -113,14 +113,14 @@ void Parser::parseLinks(GumboNode* node)
 //title
 std::string Parser::parseTitle(GumboNode* node)
 {
-	assert(root->type==GUMBO_NODE_ELEMENT);
-	assert(root->v.element.children.length>=2);
+	assert(node->type==GUMBO_NODE_ELEMENT);
+	assert(node->v.element.children.length>=2);
 
-	const GumboVector* root_children = &root->v.element.children;
+	const GumboVector* root_children = &node->v.element.children;
 	GumboNode* head = NULL;
 	for (int i = 0; i<root_children->length; ++i)
 	{
-		GumboNode* child = root_children->data[i];
+		GumboNode* child = static_cast<GumboNode*> (root_children->data[i]);
 		if (child->type==GUMBO_NODE_ELEMENT &&
 				child->v.element.tag==GUMBO_TAG_HEAD)
 		{
@@ -132,14 +132,14 @@ std::string Parser::parseTitle(GumboNode* node)
 
 	GumboVector* head_children = &head->v.element.children;
 	for (int i = 0; i<head_children->length; ++i) {
-		GumboNode* child = head_children->data[i];
+		GumboNode* child = static_cast<GumboNode*> (head_children->data[i]);
 		if (child->type==GUMBO_NODE_ELEMENT &&
 				child->v.element.tag==GUMBO_TAG_TITLE) {
 			if (child->v.element.children.length!=1)
 			{
 				return "<empty title>";
 			}
-			GumboNode* title_text = child->v.element.children.data[0];
+			GumboNode* title_text = static_cast<GumboNode*> (child->v.element.children.data[0]);
 			assert(title_text->type==GUMBO_NODE_TEXT || title_text->type==GUMBO_NODE_WHITESPACE);
 			return title_text->v.text.text;
 		}
