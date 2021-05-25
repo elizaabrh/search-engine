@@ -15,5 +15,8 @@ int LoadResult::getStatus() const
     return this->status;
 }
 
-
+string LoadResult::getOgurl() const
+{
+	return this->ogurl;
+}
 

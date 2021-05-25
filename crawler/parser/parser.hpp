@@ -2,7 +2,9 @@
 #define PARSER_HPP
 
 #include <gumbo.h>
+#include <cassert>
 
+#include <iostream>
 #include <vector>
 #include <string>
 
@@ -18,19 +20,18 @@ private:
 
 public:
     Parser(std::string html, std::string ogurl);
-    void parse(); // const chenq grum , vor karana field-ery poxi
+	void parse();
 
     std::string getTitle() const;
 	std::vector<std::string> getLinks() const;
-    std::string getText() const;
-    std::string getDescription() const;
+	std::string getText() const;
+	std::string getDescription() const;
 
-private: 
-    std::string parseDescription(GumboNode* node);
+private:
+	std::string parseDescription(GumboNode* node);
 	std::string parseTitle(GumboNode* node);
 	std::string parseText(GumboNode* node);
-	std::string parseLinks(GumboNode* node);
+	void parseLinks(GumboNode* node);
 };
 
 #endif
-

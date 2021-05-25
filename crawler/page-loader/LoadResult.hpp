@@ -14,14 +14,12 @@ private:
     int status;
     std::string ogurl;
 
-
 public:           
     //constructor
     LoadResult(const string& body, int status);
     string getBody() const;
     int getStatus() const;
     string getOgurl() const;
-    
 };
 
 #endif
