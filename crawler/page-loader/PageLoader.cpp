@@ -4,7 +4,7 @@
 LoadResult PageLoader::load(const string& url)
 {
    curlpp::Easy request; // sends request to the given url
-   curlpp::Cleanup cleaner; // clears the destructor
+   curlpp::Cleanup cleaner; // cleans up after the destructor has been called
 
    request.setOpt(curlpp::Options::Url(url));
    request.setOpt(curlpp::Options::FollowLocation(true)); // finds the location
