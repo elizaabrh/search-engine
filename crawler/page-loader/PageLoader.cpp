@@ -14,9 +14,9 @@ LoadResult PageLoader::load(const string& url)
    request.setOpt(ws);  // asum a , vor out-i mej gri
    request.perform(); // writes all data into "out" stream
 
-   std::string effUrl;
-   curlpp::infos::EffectiveUrl::get(request, effUrl);
-   return LoadResult(out.str(), effUrl, curlpp::infos::ResponseCode::get(request));
+   std::string ogUrl;
+   curlpp::infos::EffectiveUrl::get(request, ogUrl);
+   return LoadResult(out.str(), ogUrl, curlpp::infos::ResponseCode::get(request));
 
 }
 
