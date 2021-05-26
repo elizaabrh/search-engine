@@ -6,10 +6,10 @@ int main()
 {
     PageLoader x;
 
-    LoadResult y = x.load(std::string("https://www.bbc.com/"));
+    LoadResult y = x.load(std::string("https://rau.am/"));
     //std::cout << y.getBody() << std::endl << y.getStatus() << std::endl;
 
-    Parser parser(y.getBody(), "https://www.bbc.com/");
+    Parser parser(y.getBody(), "https://rau.am/");
 
     parser.parse();
 
