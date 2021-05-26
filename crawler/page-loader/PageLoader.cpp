@@ -3,19 +3,24 @@
 
 LoadResult PageLoader::load(const string& url)
 {
-   curlpp::Easy request;
-   curlpp::Cleanup cleaner;
+   curlpp::Easy request; // sends request to the given url
+   curlpp::Cleanup cleaner; // clears the destructor
 
    request.setOpt(curlpp::Options::Url(url));
-   request.setOpt(curlpp::Options::FollowLocation(true));
+   request.setOpt(curlpp::Options::FollowLocation(true)); // finds the location
    
-   std::ostringstream out;
-   curlpp::options::WriteStream ws(&out);
-   request.setOpt(ws);  // asum a , vor out-i mej gri
-   request.perform(); // writes all data into "out" stream
+   std::ostringstream out; // saves in "out" stream
+   curlpp::options::WriteStream ws(&out); // orders to write in "out"
+
+   // changes the default write stream into "out"
+   request.setOpt(ws);
+   request.perform();
 
    std::string ogUrl;
+
+   // writes found full (aka effective) url in "ogUrl"
    curlpp::infos::EffectiveUrl::get(request, ogUrl);
+
    return LoadResult(out.str(), ogUrl, curlpp::infos::ResponseCode::get(request));
 
 }

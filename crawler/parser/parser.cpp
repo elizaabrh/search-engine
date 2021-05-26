@@ -37,6 +37,7 @@ std::string Parser::parseDescription(GumboNode* node)
 		return desc;
 	}
 
+	// description is located in meta tags, that's why we search it there
 	// if the tag type is not meta, then search it in others
 	if (node->v.element.tag!=GUMBO_TAG_META)
 	{
@@ -51,7 +52,7 @@ std::string Parser::parseDescription(GumboNode* node)
 		}
 	}
 
-	// if the tag type is meta, then take from its description and return
+	// if the tag type is meta, then take its description and return
 	GumboAttribute* name = gumbo_get_attribute(&node->v.element.attributes, "name");
 	if (name!=NULL && name->value!=NULL && std::string(name->value)!="description")
 	{
@@ -68,9 +69,11 @@ std::string Parser::parseDescription(GumboNode* node)
 // text
 std::string Parser::parseText(GumboNode* node)
 {
-	if (node->type == GUMBO_NODE_TEXT) {
+	if (node->type == GUMBO_NODE_TEXT)
+	{
 		return std::string(node->v.text.text);
-	} else if (node->type == GUMBO_NODE_ELEMENT &&
+	}
+	else if (node->type == GUMBO_NODE_ELEMENT &&
 			node->v.element.tag != GUMBO_TAG_SCRIPT &&
 			node->v.element.tag != GUMBO_TAG_STYLE) {
 		std::string contents = "";
@@ -83,9 +86,10 @@ std::string Parser::parseText(GumboNode* node)
 			contents.append(text);
 		}
 		return contents;
-	} else {
-		return "";
 	}
+	else
+		return "";
+
 }
 
 //links

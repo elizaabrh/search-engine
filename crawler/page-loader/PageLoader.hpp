@@ -1,8 +1,5 @@
 #ifndef PAGE_LOADER_HPP     //if not defined
-#define PAGE_LOADER_HPP     //yete ifndef define endif chanenq,
-       //to 2 angam include aneluc 2 angam a code-y copy linelu
-    //eto dlya togo , chtoby file podklyuchilsya tolko odin raz, 
-//garantia  a
+#define PAGE_LOADER_HPP     // guarantees that the file is connected only once
 
 #include <iostream>
 #include <string>
@@ -22,4 +19,3 @@
          LoadResult load(const string &url);                
 };
 #endif
-
